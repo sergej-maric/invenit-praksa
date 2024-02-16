@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,48 +8,174 @@
     <link rel="stylesheet" href="style.css">
     <title>Invenit Praksa</title>
 </head>
+
 <body>
     <header>
-        <nav> 
+        <nav>
             <a href="">
                 <div class="logo">
-                    <img src="images/logo.png" alt="logoFirme"> 
+                    <img src="images/logo.png" alt="logoFirme">
                 </div>
             </a>
             <ul class="menu">
                 <li><a href="https://invenit.io/" target="_blank">O nama</a></li>
                 <li><a href="#contact">Kontakt</a></li>
                 <li>
-                    <div class="menu-icon">
+                    <button class="menu-icon" onclick="openCloseMenu()">
                         <div class="bar"></div>
                         <div class="bar"></div>
                         <div class="bar"></div>
-                    </div>
+                    </button>
                 </li>
             </ul>
-            <ul class="menu-items">
-                <li class="menu-items"><a href="">Invenit praksa</a></li>
-                <li class="menu-items"><a href="">Predavac</a></li>
-                <li class="menu-items"><a href="">Polaznici</a></li>
-                <li class="menu-items"><a href="">Galerija</a></li>
+            <ul id="menu" style="display: none;" class="menu-items">
+                <li><a href="">Invenit praksa</a></li>
+                <li><a href="">Predavac</a></li>
+                <li><a href="">Polaznici</a></li>
+                <li><a href="">Galerija</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="home-page">
             <div class="left-column">
-            <h1>Iskustvo koje se ne uci iz knjiga!</h1>
-            <h3>Zelis li steci prakticna znanja, upoznati se s realnim radnim okruzenjem i pripremitise za trziste rada?</h3>
-            <a href=""><button>Prijavi se</button></a>
-        </div>
-        <div class="right-column">
-            <img src="images/miki.jpeg" alt="curla">
-        </div>
+                <h1>Iskustvo koje se ne uci iz knjiga!</h1>
+                <h3>Zelis li steci prakticna znanja, upoznati se s realnim radnim okruzenjem i pripremitise za trziste
+                    rada?</h3>
+                <a href=""><button class="login-btn">Prijavi se</button></a>
+            </div>
+            <div class="right-column">
+                <img src="images/miki.jpeg" height="300px" alt="curla">
+            </div>
         </section>
-        <section>
+        <section class="students">
+            <h1>Polaznici</h1>
+            <div class="cards-container">
 
+                <div class="card">
+                    <div class="front-side">
+                        <div class="cover">
+                            <img src="images/batman.jpg" class="profile">
+                        </div>
+                        <div class="name">Sergej Maric</div>
+                        <div class="tag">JU ETS ,,Nikola Tesla"</div>
+                    </div>
+                    <div class="back-side">
+                        <div class="name"></div>
+                        <div class="tag"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="front-side">
+                        <div class="cover">
+                            <img src="images/miki.jpeg" class="profile">
+                        </div>
+                        <div class="name">Milan Curlic</div>
+                        <div class="tag">JU ETS ,,Nikola Tesla"</div>
+                    </div>
+                    <div class="back-side">
+
+                        <div class="name"></div>
+                        <div class="tag"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="front-side">
+                        <div class="cover">
+                            <img src="images/batman.jpg" class="profile">
+                        </div>
+                        <div class="name">Dejan Grabovica</div>
+                        <div class="tag">JU ETS ,,Nikola Tesla"</div>
+                    </div>
+                    <div class="back-side">
+
+                        <div class="name"></div>
+                        <div class="tag"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="front-side">
+                        <div class="cover">
+                            <img src="images/batman.jpg" class="profile">
+                        </div>
+                        <div class="name">Aleksa Vidovic</div>
+                        <div class="tag">JU ETS ,,Nikola Tesla"</div>
+                    </div>
+                    <div class="back-side">
+
+                        <div class="name"></div>
+                        <div class="tag"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="front-side">
+                        <div class="cover">
+                            <img src="images/batman.jpg" class="profile">
+                        </div>
+                        <div class="name">Marko Kunovac</div>
+                        <div class="tag">JU ETS ,,Nikola Tesla"</div>
+                    </div>
+                    <div class="back-side">
+
+                        <div class="name"></div>
+                        <div class="tag"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="front-side">
+                        <div class="cover">
+                            <img src="images/batman.jpg" class="profile">
+                        </div>
+                        <div class="name">Marija Markanovic</div>
+                        <div class="tag">JU ETS ,,Nikola Tesla"</div>
+                    </div>
+                    <div class="back-side">
+
+                        <div class="name"></div>
+                        <div class="tag"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="front-side">
+                        <div class="cover">
+                            <img src="images/batman.jpg" class="profile">
+                        </div>
+                        <div class="name">Sanjin Babic</div>
+                        <div class="tag">JU ETS ,,Nikola Tesla"</div>
+                    </div>
+                    <div class="back-side">
+
+                        <div class="name"></div>
+                        <div class="tag"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front-side">
+                        <div class="cover">
+                            <img src="images/batman.jpg" class="profile">
+                        </div>
+                        <div class="name">Sergej Maric</div>
+                        <div class="tag">JU ETS ,,Nikola Tesla"</div>
+                    </div>
+                    <div class="back-side">
+
+                        <div class="name"></div>
+                        <div class="tag"></div>
+                    </div>
+                </div>
+
+            </div>
         </section>
     </main>
     <footer id="contact"></footer>
 </body>
+
+<script src="script.js"></script>
+
 </html>

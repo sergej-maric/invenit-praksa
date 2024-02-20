@@ -12,3 +12,4 @@ function openCloseMenu(){
     
     console.log(menu);
 }
+
